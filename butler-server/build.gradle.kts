@@ -13,6 +13,9 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("mysql:mysql-connector-java:8.0.29")
+    implementation("org.mybatis:mybatis:3.5.10")
+    implementation("org.mybatis:mybatis-spring:2.0.7")
     implementation(project(":butler-common"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")

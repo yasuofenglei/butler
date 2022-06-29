@@ -1,7 +1,5 @@
 package butler.common.dto;
 
-import java.net.http.HttpResponse;
-
 public class ResponseData<T> {
 
     private int code;
@@ -20,10 +18,6 @@ public class ResponseData<T> {
 
     public static ResponseData<String> error(int code, String message) {
         return new ResponseData<>(code, message, "");
-    }
-
-    public static ResponseData<String> error(Exception e) {
-        return new ResponseData<>(0, e.getMessage(), "");
     }
 
 

@@ -17,6 +17,6 @@ public class ExceptionResponse {
     @ResponseBody
     public ResponseData<String> exception(Exception e) {
         logger.info("Handle exception.", e);
-        return ResponseData.error(e);
+        return ResponseData.error(500, e.getMessage());
     }
 }
